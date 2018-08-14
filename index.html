@@ -100,8 +100,6 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
-			position: absolute;
-			top: 30px;
 			image-rendering: -moz-crisp-edges;
 			image-rendering: -o-crisp-edges;
 			image-rendering: -webkit-optimize-contrast;
@@ -111,8 +109,10 @@
 		</style>
 	</head>
 <body>
+	<div style="padding-bottom: 30px;">
+		<img id='Tree' src='Tree/tile00.png' class='center'/>
+	</div>
 	<input type="range" min="0" max="21" value="0" onchange='change(this)' oninput='change(this)'/>
-	<img id='Tree' src='Tree/tile00.png' class='center'/>
 </body>
 <script>
 	function change(range)
